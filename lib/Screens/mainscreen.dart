@@ -11,9 +11,9 @@ import 'package:provider/provider.dart';
 
 class MainScreen extends StatelessWidget {
   List<Widget> pagelist=[
-    homeScreen(),
+    HomeScreen(),
     searchScreen(),
-    homeScreen(),
+    HomeScreen(),
     cartScreen(),
     personScreen(),
    ];
@@ -34,11 +34,11 @@ class MainScreen extends StatelessWidget {
               child:Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  bottomnav(iconitem: Icons.home, ontap:(){mainscreennotifier.setpageindex=0;},),
-                  bottomnav(iconitem: Icons.search, ontap:(){mainscreennotifier.setpageindex=1;},),
-                  bottomnav(iconitem: Icons.add, ontap:(){mainscreennotifier.setpageindex=2;},),
-                  bottomnav(iconitem: Icons.shopping_basket, ontap:(){mainscreennotifier.setpageindex=3;},),
-                  bottomnav(iconitem: Icons.person, ontap:(){mainscreennotifier.setpageindex=4;},),
+                  bottomnav(iconitem: mainscreennotifier.pageindex==0?Icons.home:Icons.home_outlined, ontap:(){mainscreennotifier.setpageindex=0;},),
+                  bottomnav(iconitem: mainscreennotifier.pageindex==1?Icons.search_rounded:Icons.search_outlined, ontap:(){mainscreennotifier.setpageindex=1;},),
+                  bottomnav(iconitem: mainscreennotifier.pageindex==2?Icons.add_box:Icons.add_box_outlined, ontap:(){mainscreennotifier.setpageindex=2;},),
+                  bottomnav(iconitem: mainscreennotifier.pageindex==3?Icons.shopping_bag_rounded:Icons.shopping_bag_outlined, ontap:(){mainscreennotifier.setpageindex=3;},),
+                  bottomnav(iconitem: mainscreennotifier.pageindex==4?Icons.person:Icons.person_outline, ontap:(){mainscreennotifier.setpageindex=4;},),
                     ],
                   ),
             ),

@@ -14,6 +14,7 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^6.1.0
+  provider: ^6.1.1
 
 
  
@@ -28,6 +29,8 @@ dev_dependencies:
 
 
 flutter:
+  assets:
+    - assets/cart.jpg
 
   
   uses-material-design: true
