@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
-import 'package:ecommerce/Widgets/bottomnav.dart';
 import 'package:ecommerce/Constants/appstyle.dart';
 
 class personScreen extends StatefulWidget {

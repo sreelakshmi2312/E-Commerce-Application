@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ecommerce/Widgets/bottomnav.dart';
 import 'package:ecommerce/Constants/appstyle.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 
 class HomeScreen extends StatefulWidget {

@@ -2,14 +2,18 @@ import 'package:ecommerce/Screens/cartscreen.dart';
 import 'package:ecommerce/Screens/homescreen.dart';
 import 'package:ecommerce/Screens/personscreen.dart';
 import 'package:ecommerce/Screens/searchscreen.dart';
-import 'package:ecommerce/constants/appstyle.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce/Widgets/bottomnav.dart';
 import 'package:ecommerce/Controllers/providercontroller.dart';
 import 'package:provider/provider.dart';
 
 
-class MainScreen extends StatelessWidget {
+class MainScreen extends StatefulWidget {
+  @override
+  State<MainScreen> createState() => _MainScreenState();
+}
+
+class _MainScreenState extends State<MainScreen> {
   List<Widget> pagelist=[
     HomeScreen(),
     searchScreen(),
@@ -17,6 +21,7 @@ class MainScreen extends StatelessWidget {
     cartScreen(),
     personScreen(),
    ];
+
   @override
   Widget build(BuildContext context) {
     return Consumer<MainScreenNotifier>(
