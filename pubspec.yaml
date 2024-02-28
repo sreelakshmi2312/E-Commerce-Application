@@ -30,7 +30,7 @@ dev_dependencies:
 
 flutter:
   assets:
-    - assets/cart.jpg
+    - assets/top_picture.jpg
 
   
   uses-material-design: true
